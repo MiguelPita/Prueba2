@@ -1,0 +1,8 @@
+{
+  "debug": false,
+  "cache": true,
+  "database": {
+    "user": "root",
+    "password": ""
+  }
+}
