@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Silex Example</title>
+</head>
+<body>
+<div style="border: solid 1px; width: 100%">
+    <a href="/">Recipes</a>
+    <a href="/recipes">New Recipe</a>
+</div>
+{% if errors is defined %}
+    <p>Something went wrong!</p>
+    <ul>
+    {% for error in errors %}
+        <li>{{ error }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+{% block content %}
+{% endblock %}
+</body>
+</html>
